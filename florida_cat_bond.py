@@ -32,12 +32,12 @@ std_loss_historical = 1.2e9
 
 # =============================================================================
 # =============================================================================
-# 2. Data Loading / Generation (Corrigé)
+# 2. Data Loading / Generation 
 # =============================================================================
 
 # Génération de données synthétiques
 annual_losses = []
-annual_counts = []  # <--- On stocke le nombre d'événements ici
+annual_counts = []  # On stocke le nombre d'événements ici
 
 # Paramètres lognormaux
 sigma_h = np.sqrt(np.log(1 + (std_loss_historical/mean_loss_historical)**2))
@@ -60,12 +60,11 @@ loss_data = pd.DataFrame({
 })
 
 # =============================================================================
-# 3. Catastrophe Risk Modeling (Fitting Corrigé)
+# 3. Catastrophe Risk Modeling 
 # =============================================================================
 
 # Frequency: Poisson process
-# CORRECTION: On prend simplement la moyenne des comptes d'événements.
-# C'est l'estimateur mathématique exact (Maximum Likelihood) pour Poisson.
+
 lambda_est = loss_data["Event_Count"].mean() 
 
 print(f"Modèle calibré - Fréquence (Lambda estimé): {lambda_est:.2f}")
