@@ -1,7 +1,7 @@
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-from scipy.stats import poisson, lognorm, genpareto  # 'gdp' n'existe pas, c'est 'genpareto'. Je le laisse ici au cas où vous voudriez l'utiliser plus tard.
+from scipy.stats import poisson, lognorm, genpareto  
 from scipy.optimize import minimize
 import warnings
 
