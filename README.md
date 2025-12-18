@@ -1,4 +1,4 @@
-Catastrophe Bond (Cat Bond) Pricing & Risk Modeling
+# Catastrophe Bond (Cat Bond) Pricing & Risk Modeling
 
 This project implements a complete quantitative modeling framework for a Catastrophe Bond (Cat Bond) using Monte Carlo simulation, inspired by real-world insurance-linked securities (ILS) structures.
 
@@ -179,7 +179,7 @@ Investor vs issuer valuation comparison
 
 Integration into a web-based dashboard
 
- Author
+ # Author
 
 Toussaint
 Finance & Quantitative Risk Modeling
